@@ -1,0 +1,66 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.12.0","pid":54007,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"test/climate_api_playback_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading test/climate_api_playback_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2}
+{"count":3,"type":"allSuites","time":21}
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3519}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":null,"metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":3525}
+{"group":{"id":3,"suiteID":0,"parentID":2,"name":"Climate Api Playback Tests","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":13,"column":3,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"group","time":3527}
+{"test":{"id":4,"name":"Climate Api Playback Tests (setUpAll)","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":17,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":3527}
+{"testID":4,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3711}
+{"test":{"id":5,"name":"Climate Api Playback Tests averageRainfallForGreatBritainFrom1980to1999Exists","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":30,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":3712}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3931}
+{"test":{"id":6,"name":"Climate Api Playback Tests averageRainfallForFranceFrom1980to1999Exists","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":42,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":3932}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3949}
+{"test":{"id":7,"name":"Climate Api Playback Tests averageRainfallForEgyptFrom1980to1999Exists","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":53,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":3950}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3967}
+{"test":{"id":8,"name":"Climate Api Playback Tests averageRainfallForGreatBritainFrom1985to1995DoesNotExist","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":64,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":3967}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3978}
+{"test":{"id":9,"name":"Climate Api Playback Tests averageRainfallForMiddleEarthFrom1980to1999DoesNotExist","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":77,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":3979}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3986}
+{"test":{"id":10,"name":"Climate Api Playback Tests averageRainfallForGreatBritainAndFranceFrom1980to1999CanBeCalculatedFromTwoRequests","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":89,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":3986}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4013}
+{"test":{"id":11,"name":"Climate Api Playback Tests (tearDownAll)","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":102,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_playback_test.dart"},"type":"testStart","time":4014}
+{"testID":11,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4022}
+{"suite":{"id":12,"platform":"vm","path":"test/climate_api_test.dart"},"type":"suite","time":4034}
+{"test":{"id":13,"name":"loading test/climate_api_test.dart","suiteID":12,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4034}
+{"testID":13,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5806}
+{"group":{"id":14,"suiteID":12,"parentID":null,"name":null,"metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":5807}
+{"group":{"id":15,"suiteID":12,"parentID":14,"name":"Climate Api Tests","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":11,"column":3,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"group","time":5808}
+{"test":{"id":16,"name":"Climate Api Tests (setUpAll)","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":14,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"testStart","time":5808}
+{"testID":16,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5839}
+{"test":{"id":17,"name":"Climate Api Tests averageRainfallForGreatBritainFrom1980to1999Exists","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":18,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"testStart","time":5840}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7208}
+{"test":{"id":18,"name":"Climate Api Tests averageRainfallForFranceFrom1980to1999Exists","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":25,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"testStart","time":7209}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8160}
+{"test":{"id":19,"name":"Climate Api Tests averageRainfallForEgyptFrom1980to1999Exists","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":32,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"testStart","time":8161}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9017}
+{"test":{"id":20,"name":"Climate Api Tests averageRainfallForGreatBritainFrom1985to1995DoesNotExist","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":39,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"testStart","time":9018}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9622}
+{"test":{"id":21,"name":"Climate Api Tests averageRainfallForMiddleEarthFrom1980to1999DoesNotExist","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":47,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"testStart","time":9624}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10294}
+{"test":{"id":22,"name":"Climate Api Tests averageRainfallForGreatBritainAndFranceFrom1980to1999CanBeCalculatedFromTwoRequests","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":55,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_test.dart"},"type":"testStart","time":10296}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12150}
+{"test":{"id":23,"name":"Climate Api Tests (tearDownAll)","suiteID":12,"groupIDs":[14,15],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":12151}
+{"testID":23,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":12153}
+{"suite":{"id":24,"platform":"vm","path":"test/climate_api_recording_test.dart"},"type":"suite","time":12155}
+{"test":{"id":25,"name":"loading test/climate_api_recording_test.dart","suiteID":24,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":12156}
+{"testID":25,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":14483}
+{"group":{"id":26,"suiteID":24,"parentID":null,"name":null,"metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":14483}
+{"group":{"id":27,"suiteID":24,"parentID":26,"name":"Climate Api Playback Tests","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":13,"column":3,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"group","time":14484}
+{"test":{"id":28,"name":"Climate Api Playback Tests (setUpAll)","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":18,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":14484}
+{"testID":28,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":14733}
+{"test":{"id":29,"name":"Climate Api Playback Tests averageRainfallForGreatBritainFrom1980to1999Exists","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":34,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":14734}
+{"testID":29,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":16075}
+{"test":{"id":30,"name":"Climate Api Playback Tests averageRainfallForFranceFrom1980to1999Exists","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":46,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":16076}
+{"testID":30,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":16997}
+{"test":{"id":31,"name":"Climate Api Playback Tests averageRainfallForEgyptFrom1980to1999Exists","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":57,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":17001}
+{"testID":31,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":17979}
+{"test":{"id":32,"name":"Climate Api Playback Tests averageRainfallForGreatBritainFrom1985to1995DoesNotExist","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":68,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":17980}
+{"testID":32,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18574}
+{"test":{"id":33,"name":"Climate Api Playback Tests averageRainfallForMiddleEarthFrom1980to1999DoesNotExist","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":81,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":18574}
+{"testID":33,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19182}
+{"test":{"id":34,"name":"Climate Api Playback Tests averageRainfallForGreatBritainAndFranceFrom1980to1999CanBeCalculatedFromTwoRequests","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":93,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":19183}
+{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20954}
+{"test":{"id":35,"name":"Climate Api Playback Tests (tearDownAll)","suiteID":24,"groupIDs":[26,27],"metadata":{"skip":false,"skipReason":null},"line":106,"column":5,"url":"file:///Users/hemanthraj/me/servirtium/servirtium/example/test/climate_api_recording_test.dart"},"type":"testStart","time":20954}
+{"testID":35,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":20971}
+{"success":true,"type":"done","time":20976}

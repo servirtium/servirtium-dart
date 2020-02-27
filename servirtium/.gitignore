@@ -21,10 +21,3 @@ build/
 
 # Directory created by dartdoc
 doc/api/
-
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/

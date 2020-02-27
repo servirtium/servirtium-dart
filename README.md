@@ -1,22 +1,5 @@
-A library for Dart developers.
+![](Servirtium-Square.png?raw=true)
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Main Servirtium site: http://servirtium.dev
 
-## Usage
-
-A simple usage example:
-
-```dart
-import 'package:servirtium/servirtium.dart';
-
-main() {
-  var awesome = new Awesome();
-}
-```
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
+# A Servirtium library for Dart 

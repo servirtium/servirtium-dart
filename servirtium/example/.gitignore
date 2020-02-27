@@ -1,15 +1,3 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-.idea
-
 # Files and directories created by pub
 .dart_tool/
 .packages
@@ -21,10 +9,3 @@ build/
 
 # Directory created by dartdoc
 doc/api/
-
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
