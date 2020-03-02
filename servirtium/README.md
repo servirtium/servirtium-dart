@@ -8,20 +8,26 @@ brew tap dart-lang/dart
 brew install dart
 ```
 
+## Usage
+
+### Add servirtium to your `pubspec.yaml`
+```
+dependencies:
+ servirtium:
+   git:
+     url: https://github.com/servirtium/servirtium-dart.git
+     path: servirtium
+```
+
+### Import and start using
+```dart
+import 'package:servirtium/servirtium.dart';
+```
+
 ## Running the example
 
 ```
 cd example
 pub get 
 pub run test --reporter expanded --concurrency=1
-```
-
-Unfortunately Dart's test-runner's output rounds test times to the second, which means you can't see 
-precisely how fast the 'playback' tests are versus 'direct' on the console.
-
-## Get reports and analyze difference
-
-```
-pub run test --reporter json --concurrency=1 > output.report
-dart report.dart
 ```
