@@ -16,7 +16,7 @@ when Service Virtualization is part of a **Technology Compatibility Kit**
 
 ## Usage
 
-### Add servirtium to your `pubspec.yaml`
+### Add Servirtium to your `pubspec.yaml`
 ```
 dependencies:
  servirtium:
@@ -25,9 +25,22 @@ dependencies:
      path: servirtium
 ```
 
-### Import and start using
+### Import
 ```dart
 import 'package:servirtium/servirtium.dart';
 ```
 
-For complete dart example check out [demo-dart-climate-tck](https://github.com/servirtium/demo-dart-climate-tck)
+### Playback of previously recorded interactions
+```dart
+# TODO
+```
+
+### Recording interactions
+```dart
+# TODO
+```
+## Further reading
+
+For complete dart example see our [World Bank ClimateAPI demo project](https://github.com/servirtium/demo-dart-climate-tck).
+
+There is also [example](example) in the project too.
