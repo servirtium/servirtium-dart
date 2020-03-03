@@ -43,4 +43,4 @@ import 'package:servirtium/servirtium.dart';
 
 For complete dart example see our [World Bank ClimateAPI demo project](https://github.com/servirtium/demo-dart-climate-tck).
 
-There is also [example](./example) in the project too.
+There is also [example](./servirtium/example) in the project too.
