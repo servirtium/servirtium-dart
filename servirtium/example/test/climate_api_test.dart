@@ -68,7 +68,7 @@ Future averageRainfallForGreatBritainFrom1980To1999Exists(
     await climateApi.getAverageAnnualRainfall(
       fromYear: 1980,
       toYear: 1999,
-      countryISOs: ["gbr"],
+      countryISOs: ['gbr'],
     ),
     988.8454972331015,
   );
@@ -80,7 +80,7 @@ Future averageRainfallForFranceFrom1980To1999Exists(
     await climateApi.getAverageAnnualRainfall(
       fromYear: 1980,
       toYear: 1999,
-      countryISOs: ["fra"],
+      countryISOs: ['fra'],
     ),
     913.7986955122727,
   );
@@ -92,7 +92,7 @@ Future averageRainfallForEgyptFrom1980To1999Exists(
     await climateApi.getAverageAnnualRainfall(
       fromYear: 1980,
       toYear: 1999,
-      countryISOs: ["egy"],
+      countryISOs: ['egy'],
     ),
     54.58587712129825,
   );
@@ -104,7 +104,7 @@ Future averageRainfallForGreatBritainFrom1985To1995DoesNotExist(
     await climateApi.getAverageAnnualRainfall(
       fromYear: 1985,
       toYear: 1995,
-      countryISOs: ["gbr"],
+      countryISOs: ['gbr'],
     );
   } on ArgumentError catch (e) {
     expect(
@@ -122,7 +122,7 @@ Future averageRainfallForMiddleEarthFrom1980To1999DoesNotExist(
     await climateApi.getAverageAnnualRainfall(
       fromYear: 1980,
       toYear: 1999,
-      countryISOs: ["mde"],
+      countryISOs: ['mde'],
     );
   } on ArgumentError catch (e) {
     expect(
@@ -141,7 +141,7 @@ Future
     await climateApi.getAverageAnnualRainfall(
       fromYear: 1980,
       toYear: 1999,
-      countryISOs: ["gbr", "fra"],
+      countryISOs: ['gbr', 'fra'],
     ),
     951.3220963726872,
   );

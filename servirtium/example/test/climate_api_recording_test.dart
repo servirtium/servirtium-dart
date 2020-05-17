@@ -16,8 +16,8 @@ void main() {
     ServirtiumHandler handler;
 
     setUpAll(() async {
-      final String address = 'localhost';
-      final int port = 61417;
+      final address = 'localhost';
+      final port = 61417;
 
       climateApi = ClimateApi(apiUrl: 'http://$address:$port');
 
