@@ -33,7 +33,7 @@ class RecordingHttpListener implements HttpListener {
   });
 
   @override
-  Future start({HttpServer server, ReceivePort receivePort}) async {
+  Future<void> start({HttpServer server, ReceivePort receivePort}) async {
     _writer = SimpleMocksWriter(mocksPath: mocksPath);
 
     _methodName = 'sample_method';
@@ -49,16 +49,25 @@ class RecordingHttpListener implements HttpListener {
       final url = '$originUrl${request.uri}';
 
       try {
-        final response = await http.get(url);
+        final httpRequest = http.Request(request.method, Uri.parse(url));
+        request.headers.forEach((name, values) {
+          if (name == 'host') return;
+          httpRequest.headers.addAll({
+            name: values.first,
+          });
+        });
+        if (requestBody.isNotEmpty) httpRequest.body = requestBody;
 
-        responseHeaders = response.headers.entries
+        final httpResponse =
+            await http.Response.fromStream(await httpRequest.send());
+        responseHeaders = httpResponse.headers.entries
             .map((e) => '${e.key}: ${e.value}')
             .join('\n');
-        responseBody = response.body;
-        responseCode = response.statusCode;
+        responseBody = httpResponse.body;
+        responseCode = httpResponse.statusCode;
       } on SocketException {
         request.response.addError(
-          Exception('Error occured while trying to send request to API'),
+          Exception('Error occurred while trying to send request to API'),
         );
       }
 
@@ -93,7 +102,7 @@ class RecordingHttpListener implements HttpListener {
   }
 
   @override
-  Future stop() async {
+  Future<void> stop() async {
     await _subscription.cancel();
     _subscription = null;
 

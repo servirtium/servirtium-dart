@@ -3,7 +3,7 @@
 ### Request headers recorded for playback:
 
 ```
-user-agent: Dart/2.7 (dart:io)
+user-agent: Dart/2.8 (dart:io)
 accept-encoding: gzip
 content-length: 0
 host: localhost:61417
@@ -20,10 +20,10 @@ host: localhost:61417
 
 ```
 connection: keep-alive
-set-cookie: AWSALB=QNxkpzS64gNuUDCvGXQY2Mklk6ZOQ3zG2bptA0+qhZ5sEnHuP4GbgfmowI4n+8HX5eQ6vj/ogj7YLKv/BV9qKM4SN9xOQe03On7gD84BXuj6CiTTNa10NR0kCSbv; Expires=Thu, 05 Mar 2020 08:11:24 GMT; Path=/,AWSALBCORS=QNxkpzS64gNuUDCvGXQY2Mklk6ZOQ3zG2bptA0+qhZ5sEnHuP4GbgfmowI4n+8HX5eQ6vj/ogj7YLKv/BV9qKM4SN9xOQe03On7gD84BXuj6CiTTNa10NR0kCSbv; Expires=Thu, 05 Mar 2020 08:11:24 GMT; Path=/; SameSite=None; Secure,TS01c35ec3=010640bd98bc625d7308728fad8ac151023ffbc724e65398c7523dfbb10af3be4ffce8154128879e24848e55effee691e5cb1ada95; Path=/,climatedataapi.cookie=2631971082.33060.0000; path=/,climatedataapi_ext.cookie=2543958026.20480.0000; path=/; Httponly,TS0137860d=01359ee9763e09c8c89bf9805504cda68b91a0beae0fe464929d6169f9966ec3ff8227f4fc4d2c4ee8c15dd829ca12779cb0668cc63ff848b7210a1934437306bb0c5163f64d316d0e9ef323f4add1db757609590163823a9c091c2290eedbf365d830d09d29a2c5075dd037889d1b9bbc640bd1eb62bedb2521194d82dd7444fadbbb03ee; Path=/
+set-cookie: AWSALB=U/XK4z+d6BYNmHePvo8eTe2xXDd/VQ7JvgPw1Qie5VlVY/4W1srVgg1WbBeK7Rb7U86niJpZzYxhRWZNDpu19ZUbrdshO9tp0zoOoOtg1RwO2XYw0vsoMJFsgaCy; Expires=Sun, 24 May 2020 16:08:20 GMT; Path=/,AWSALBCORS=U/XK4z+d6BYNmHePvo8eTe2xXDd/VQ7JvgPw1Qie5VlVY/4W1srVgg1WbBeK7Rb7U86niJpZzYxhRWZNDpu19ZUbrdshO9tp0zoOoOtg1RwO2XYw0vsoMJFsgaCy; Expires=Sun, 24 May 2020 16:08:20 GMT; Path=/; SameSite=None; Secure,TS01c35ec3=010640bd987e91b343162eb3b2a5916a349a5211c4e0c5a9ad0ca63f9e0eff0dd1a9c369dc8e98be3f32a1aa3244801fffc7324af3; Path=/,climatedataapi.cookie=2631971082.33060.0000; path=/; Httponly,climatedataapi_ext.cookie=2543958026.20480.0000; path=/; Httponly,TS0137860d=01359ee97625dd74224cd8ce39f3045535c7e8827cce1b229efdbc53b88689ded007897895c2b65da4994857be2985b0fb8b091ed249c404b4541a3ae316d22e280aa4fe199813038e4597a3ce3e06fa615603707459357ea2d6187795e5eab42380d83be34440b96f367408acca2512376ecc2d5f71733bf7972c56bba8bfda77856d6abe; Path=/
 cache-control: no-cache,no-store
 transfer-encoding: chunked
-date: Thu, 27 Feb 2020 08:11:24 GMT
+date: Sun, 17 May 2020 16:08:20 GMT
 access-control-allow-origin: *
 secure: true
 strict-transport-security: max-age=0,max-age=31536000; includeSubDomains
