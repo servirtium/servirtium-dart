@@ -39,7 +39,7 @@ class Servirtium {
     int port,
     HttpListener listener,
   }) async {
-    List<dynamic> ports = await runner.run(
+    final ports = await runner.run(
       _startHttpServer,
       [address, port, listener],
     );
@@ -55,10 +55,9 @@ class Servirtium {
     int port = args[1];
     HttpListener listener = args[2];
 
-    HttpServer server = await HttpServer.bind(address, port, shared: true);
+    final server = await HttpServer.bind(address, port, shared: true);
 
-    ReceivePort receivePort = ReceivePort();
-
+    final receivePort = ReceivePort();
     await listener.start(
       server: server,
       receivePort: receivePort,
