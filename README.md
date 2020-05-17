@@ -39,8 +39,40 @@ import 'package:servirtium/servirtium.dart';
 ```dart
 # TODO
 ```
+
+## Installing Dart
+
+```
+brew tap dart-lang/dart
+brew install dart
+```
+
+## Usage
+
+### Add servirtium to your `pubspec.yaml`
+```
+dependencies:
+ servirtium:
+   git:
+     url: https://github.com/servirtium/servirtium-dart.git
+     path: servirtium
+```
+
+### Import and start using
+```dart
+import 'package:servirtium/servirtium.dart';
+```
+
+## Running the example
+
+```
+cd example
+pub get 
+pub run test --reporter expanded --concurrency=1
+```
+
 ## Further reading
 
 For complete dart example see our [World Bank ClimateAPI demo project](https://github.com/servirtium/demo-dart-climate-tck).
 
-There is also [example](./servirtium/example) in the project too.
+There is also [example](./example) in the project too.
