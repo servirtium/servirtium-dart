@@ -4,22 +4,15 @@
 
 class Interaction {
   final int index;
-
   final String method;
-
   final String uri;
-
   final int statusCode;
-
   final String requestHeaders;
-
   final String requestBody;
-
   final String responseHeaders;
-
   final String responseBody;
 
-  Interaction({
+  const Interaction({
     this.index,
     this.method,
     this.uri,
