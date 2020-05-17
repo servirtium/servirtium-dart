@@ -19,10 +19,10 @@ class ClimateApi {
     int toYear,
     List<String> countryISOs,
   }) async {
-    double sum = 0;
+    var sum = 0;
 
-    for (String countryISO in countryISOs) {
-      String url =
+    for (var countryISO in countryISOs) {
+      final url =
           '$apiUrl/climateweb/rest/v1/country/annualavg/pr/$fromYear/$toYear/$countryISO.xml';
 
       try {
@@ -39,17 +39,16 @@ class ClimateApi {
               (d) => double.parse(d.text),
             );
 
-        if (doubles.length == 0) {
+        if (doubles.isEmpty) {
           throw ArgumentError('Date range $fromYear - $toYear not supported');
         }
 
-        double total = doubles.fold(0, (prev, d) => prev += d);
+        final total = doubles.fold(0, (prev, d) => prev += d);
         sum += total / doubles.length;
       } on SocketException {
-        throw Exception('Error occured while trying to send request to API');
+        throw Exception('Error occurred while trying to send request to API');
       }
     }
-
     return sum / countryISOs.length;
   }
 }
