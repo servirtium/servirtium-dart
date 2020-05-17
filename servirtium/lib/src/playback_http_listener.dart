@@ -7,7 +7,6 @@ import 'dart:io';
 import 'dart:isolate';
 
 import 'package:servirtium/src/http_listener.dart';
-import 'package:servirtium/src/interaction.dart';
 import 'package:servirtium/src/simple_mocks_parser.dart';
 
 class PlaybackHttpListener implements HttpListener {
@@ -24,15 +23,14 @@ class PlaybackHttpListener implements HttpListener {
   PlaybackHttpListener({this.mocksPath});
 
   @override
-  Future start({HttpServer server, ReceivePort receivePort}) async {
+  Future<void> start({HttpServer server, ReceivePort receivePort}) async {
     _parser = SimpleMocksParser(mocksPath: mocksPath)..init();
 
     _methodName = 'sample_method';
-    int n = 0;
+    var n = 0;
 
     _subscription = server.listen((HttpRequest request) async {
-      Interaction interaction =
-          _parser.getInteractionsByMethodName(_methodName)[n];
+      final interaction = _parser.getInteractionsByMethodName(_methodName)[n];
 
       request.response.write(interaction.responseBody);
       await request.response.close();
@@ -47,10 +45,10 @@ class PlaybackHttpListener implements HttpListener {
   }
 
   @override
-  Future stop() async {
+  Future<void> stop() async {
     await _subscription.cancel();
     _subscription = null;
-    
+
     await _messageSubscription.cancel();
     _messageSubscription = null;
   }

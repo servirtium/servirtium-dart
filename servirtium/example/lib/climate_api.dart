@@ -19,7 +19,7 @@ class ClimateApi {
     int toYear,
     List<String> countryISOs,
   }) async {
-    var sum = 0;
+    var sum = 0.0;
 
     for (var countryISO in countryISOs) {
       final url =
