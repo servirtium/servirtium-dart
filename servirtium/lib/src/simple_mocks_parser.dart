@@ -21,7 +21,7 @@ class SimpleMocksParser {
     _interactions = {};
 
     for (var file in files) {
-      String methodName =
+      final methodName =
           file.path.replaceFirst('$mocksPath/', '').replaceFirst('.md', '');
       _interactions[methodName] = _parseMock(mockFile: file);
     }
@@ -32,7 +32,7 @@ class SimpleMocksParser {
   }
 
   List<Interaction> _parseMock({File mockFile}) {
-    String data = mockFile.readAsStringSync();
+    final data = mockFile.readAsStringSync();
 
     var interactionsRegex = RegExp(
       r'(## Interaction)[\w\W]+?(?=## Interaction|$)',
@@ -58,26 +58,26 @@ class SimpleMocksParser {
       r'(### Response body recorded for playback[\w|\W]*?```)([\w\W]+?)(```)',
     );
 
-    List<Interaction> interactions = [];
+    var interactions = <Interaction>[];
 
     var matches = interactionsRegex.allMatches(data);
 
-    for (int i = 0; i < matches.length; i++) {
-      String interaction = matches.elementAt(i).group(0);
+    for (var i = 0; i < matches.length; i++) {
+      final interaction = matches.elementAt(i).group(0);
 
       var interactionHeader =
           interactionHeaderRegex.allMatches(interaction).first;
 
-      String requestHeaders =
+      final requestHeaders =
           requestHeadersRegex.allMatches(interaction).first.group(2).trim();
 
-      String requestBody =
+      final requestBody =
           requestBodyRegex.allMatches(interaction).first.group(2).trim();
 
-      String responseHeaders =
+      final responseHeaders =
           responseHeadersRegex.allMatches(interaction).first.group(2).trim();
 
-      String responseBody =
+      final responseBody =
           responseBodyRegex.allMatches(interaction).first.group(2).trim();
 
       interactions.add(
