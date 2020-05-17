@@ -9,12 +9,13 @@ import 'package:servirtium/src/interaction.dart';
 class SimpleMocksWriter {
   final String mocksPath;
 
-  SimpleMocksWriter({this.mocksPath});
+  const SimpleMocksWriter({this.mocksPath});
 
-  void writeMock({String methodName, List<Interaction> interactions}) async {
-    File file = new File('$mocksPath/$methodName.md');
+  Future<void> writeMock(
+      {String methodName, List<Interaction> interactions}) async {
+    final file = File('$mocksPath/$methodName.md');
 
-    String data = interactions.map((i) => i.toString()).join('\n');
+    final data = interactions.map((i) => i.toString()).join('\n');
 
     await file.writeAsString(data);
   }
