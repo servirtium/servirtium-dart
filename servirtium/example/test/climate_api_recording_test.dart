@@ -1,4 +1,4 @@
-// Copyright (c) 2020, the Servirtium project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Servirtium project authors. Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
@@ -10,7 +10,7 @@ import 'climate_api_test.dart' as climateApiTest;
 import 'config.dart';
 
 void main() {
-  group('Climate Api Playback Tests', () {
+  group('Climate Api Recording Tests', () {
     ClimateApi climateApi;
 
     ServirtiumHandler handler;
