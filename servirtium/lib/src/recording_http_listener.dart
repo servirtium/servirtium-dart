@@ -37,19 +37,19 @@ class RecordingHttpListener implements HttpListener {
     _writer = SimpleMocksWriter(mocksPath: mocksPath);
 
     _methodName = 'sample_method';
-    int n = 0;
+    var n = 0;
 
     _subscription = server.listen((HttpRequest request) async {
-      String requestHeaders = request.headers.toString();
-      String requestBody = await utf8.decodeStream(request);
-      String responseHeaders = '';
-      String responseBody = '';
-      int responseCode = 404;
+      final requestHeaders = request.headers.toString();
+      final requestBody = await utf8.decodeStream(request);
+      var responseHeaders = '';
+      var responseBody = '';
+      var responseCode = 404;
 
-      String url = '$originUrl${request.uri}';
+      final url = '$originUrl${request.uri}';
 
       try {
-        final http.Response response = await http.get(url);
+        final response = await http.get(url);
 
         responseHeaders = response.headers.entries
             .map((e) => '${e.key}: ${e.value}')
@@ -62,7 +62,7 @@ class RecordingHttpListener implements HttpListener {
         );
       }
 
-      Interaction interaction = Interaction(
+      final interaction = Interaction(
         index: n,
         method: request.method,
         uri: request.uri.toString(),

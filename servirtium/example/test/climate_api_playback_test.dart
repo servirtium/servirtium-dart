@@ -6,7 +6,7 @@ import 'package:example/climate_api.dart';
 import 'package:servirtium/servirtium.dart';
 import 'package:test/test.dart';
 
-import 'climate_api_test.dart' as climateApiTest;
+import 'climate_api_test.dart' as climate_api_test;
 import 'config.dart';
 
 void main() {
@@ -34,8 +34,7 @@ void main() {
           AVERAGE_RAINFALL_FOR_GREAT_BRITAIN_FROM_1980_TO_1999_EXISTS,
         );
 
-        await climateApiTest
-            .averageRainfallForGreatBritainFrom1980To1999Exists(climateApi);
+        await climate_api_test.averageRainfallForGreatBritainFrom1980To1999Exists(climateApi);
       },
     );
 
@@ -45,8 +44,7 @@ void main() {
         handler
             .changeMethod(AVERAGE_RAINFALL_FOR_FRANCE_FROM_1980_TO_1999_EXISTS);
 
-        await climateApiTest
-            .averageRainfallForFranceFrom1980To1999Exists(climateApi);
+        await climate_api_test.averageRainfallForFranceFrom1980To1999Exists(climateApi);
       },
     );
 
@@ -56,8 +54,7 @@ void main() {
         handler
             .changeMethod(AVERAGE_RAINFALL_FOR_EGYPT_FROM_1980_TO_1999_EXISTS);
 
-        await climateApiTest
-            .averageRainfallForEgyptFrom1980To1999Exists(climateApi);
+        await climate_api_test.averageRainfallForEgyptFrom1980To1999Exists(climateApi);
       },
     );
 
@@ -68,8 +65,7 @@ void main() {
           AVERAGE_RAINFALL_FOR_GREAT_BRITAIN_FROM_1985_TO_1995_DOES_NOT_EXIST,
         );
 
-        await climateApiTest
-            .averageRainfallForGreatBritainFrom1985To1995DoesNotExist(
+        await climate_api_test.averageRainfallForGreatBritainFrom1985To1995DoesNotExist(
                 climateApi);
       },
     );
@@ -80,8 +76,7 @@ void main() {
         handler.changeMethod(
           AVERAGE_RAINFALL_FOR_MIDDLE_EARTH_FROM_1980_TO_1999_DOES_NOT_EXIST,
         );
-        await climateApiTest
-            .averageRainfallForMiddleEarthFrom1980To1999DoesNotExist(
+        await climate_api_test.averageRainfallForMiddleEarthFrom1980To1999DoesNotExist(
                 climateApi);
       },
     );
@@ -93,8 +88,7 @@ void main() {
           AVERAGE_RAINFALL_FOR_GREAT_BRITAIN_AND_FRANCE_FROM_1980_TO_1999_CAN_BE_CALCULATED_FROM_TWO_REQUESTS,
         );
 
-        await climateApiTest
-            .averageRainfallForGreatBritainAndFranceFrom1980T01999CanBeCalculatedFromTwoRequests(
+        await climate_api_test.averageRainfallForGreatBritainAndFranceFrom1980T01999CanBeCalculatedFromTwoRequests(
                 climateApi);
       },
     );

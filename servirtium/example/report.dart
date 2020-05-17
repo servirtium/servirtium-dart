@@ -1,14 +1,14 @@
 import 'dart:convert';
 import 'dart:io';
 
-main(List<String> args) {
+void main(List<String> args) {
   final output = File('${Directory.current.path}/output.report');
   if (!output.existsSync()) {
     throw 'Please run `pub run test --reporter expanded --concurrency=1 > output.report` before trying to access any report';
   }
-  List<String> outStr = output.readAsLinesSync();
-  final Map<String, Map> _tests = {};
-  for (String line in outStr) {
+  final outStr = output.readAsLinesSync();
+  final _tests = <String, Map>{};
+  for (var line in outStr) {
     final _json = jsonDecode(line);
     if (_json['test'] != null) {
 //      print('${_json['test']['name']}');
@@ -29,7 +29,7 @@ main(List<String> args) {
       _tests['group_${_json['group']['id']}']['start'] = _json['time'];
     }
   }
-  int lastVal = 0;
+  var lastVal = 0;
   _tests.forEach((key, value) {
     if (key.contains('group')) {
       print('''________________________
